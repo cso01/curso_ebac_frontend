@@ -1,21 +1,18 @@
-const form = document.getElementById('confirmaçao');
+const form = document.getElementById('form');
+const A = document.getElementById('primeiro');
+const B = document.getElementById('segundo');
 
-function validaNome(valida)
-    const nomeComoArray = valida.split('');
-    return nomeComoArray.lenght > primeiro;
-
-form.addEventListener('submit', function(e){
-    let formEValido = false;
-    e.preventDefault();
-
-
-const confirmaçaoB = document.getElementById('confirmçao');
-formEValido = validaNome(confirmaçao.value)
-if (formEValido) {
-    alert("Formulário invalido");
-} else {
-    alert("Formulário válido");
+function operation(primeiro, segundo){
+    return segundo > primeiro
 }
 
+form.addEventListener('submit', function(e){
+    e.preventDefault();
+
+    let validarForm = operation(primeiro.value, segundo.value)
+    if(validarForm){
+        alert('SUCESSO!')
+    } else{
+        alert('ERROR!')
+    }
 })
-console.log(form);
