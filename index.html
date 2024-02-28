@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTROS</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>CADASTRE-SE AQUI!</h1>
+    </header>
+    <input type="text" placeholder="E-mail">
+    <input type="number" placeholder="CPF">
+    <input type="tel" id="campo-telefone" placeholder="Telefone">
+    <input type="text" placeholder="Endereço">
+    <input type="number" placeholder="Cep">
+    <button type="submit">Enviar</button>
+    <script src="jquery.mask.min.js"></script>
+    <script>
+
+
+        $('#campo-telefone').mask('(00)00000-0000')
+
+        $('#campo-CEP').mask('00000-000')
+
+        $('#campo-CPF').mask('000.000.000-00')
+
+
+    </script>
+    
+</body>
+</html>

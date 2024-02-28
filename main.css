@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-style: italic;
+    background-color: black;
+    color: #fff;
+
+}
+
+body {
+    background-color: beige;
+}
+
+input {
+    text-align: center;
+    margin-top: 25px;
+    display: block;
+}
+
+button {
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    background-color: blue;
+    color: #fff;
+    cursor: pointer;
+}
