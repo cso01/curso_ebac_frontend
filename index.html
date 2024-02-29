@@ -10,24 +10,17 @@
     <header>
         <h1>CADASTRE-SE AQUI!</h1>
     </header>
-    <input type="text" placeholder="E-mail">
-    <input type="number" placeholder="CPF">
-    <input type="tel" id="campo-telefone" placeholder="Telefone">
-    <input type="text" placeholder="Endereço">
-    <input type="number" placeholder="Cep">
-    <button type="submit">Enviar</button>
+    <form>
+        <input type="text" placeholder="E-mail">
+        <input type="number" id="campo-CPF" placeholder="CPF">
+        <input type="tel" id="campo-telefone" placeholder="Telefone">
+        <input type="text" placeholder="Endereço">
+        <input type="number" id="campo-CEP" placeholder="Cep">
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="main.js"></script>
     <script src="jquery.mask.min.js"></script>
-    <script>
-
-
-        $('#campo-telefone').mask('(00)00000-0000')
-
-        $('#campo-CEP').mask('00000-000')
-
-        $('#campo-CPF').mask('000.000.000-00')
-
-
-    </script>
-    
+    <script src="jquery.validate.min.js"></script>
 </body>
 </html>
